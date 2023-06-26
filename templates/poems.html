@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Britt Wrote This</title>
+    <!--Links to main.css for a style sheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
+
+</head>
+<body class="pages-color">
+<!--Links the text in the top left to the homepage if clicked-->
+<a href="{{ url_for('home') }}" class="britt_link"><h1 id="top">britt wrote this</h1></a>
+
+
+<br>
+
+<h3>Top 5</h3>
+<!--Ordered list of top 5 poems-->
+<ol>
+    <li><a href="#lost_time">Lost Time</a></li>
+    <li><a href="#last_day">Last Day</a></li>
+    <li><a href="#sister">Sister</a></li>
+    <li><a href="#nostalgia">Nostalgia</a></li>
+    <li><a href="#self-d">Self Destruction</a></li>
+</ol>
+<br>
+<hr>
+<div id="edit" contenteditable="true">
+<!-- id for each poem heading, to direct page to selected id tag-->
+<h3 id="lost_time">Lost Time</h3>
+<!--Image file-->
+<img src="{{ url_for('static', filename='pictures/lost-time.jpg') }}" alt="Lost Time" style="width:300px;height:220px"; class="left">
+<p>So these will be the years that I lose,<br>
+    A double-edged sword to swallow, sheathed & formidable,<br>
+    Saturated silk grazing the blade of what we have become,<br>
+    Warped metal & loss hammered over the years, forging a ceremonious familiarity,<br>
+    I remember thinking we would always know each other,<br>
+    Feeding each other's minds and ambitions,<br>
+    Growing a seed of intricate candor, bonded by camaraderie and endured life,<br>
+    Touching our faces in escalated splendor,<br>
+    What an allusive mystery that sisterhood projects.<br>
+    <br>
+    But time courses through the blood of expectation,<br>
+    Carefully untying knots of promises we made over the years,<br>
+    Our beautiful words weigh down the divergent pages we've fallen on,<br>
+    Woven & bound, preserved as armored history.<br><br>
+</p>
+<hr>
+<h3 id="last_day">Last Day</h3>
+<p>And I never thought there would be a last day between us,<br>
+    Tucked away under spirited conquest and romantic impulse,<br>
+    An electric current of inevitable promise, skin deep and red hot,<br>
+    A seething reminder of time colliding with finite stories.
+</p>
+<hr>
+<h3 id="sister">Sister</h3>
+<img src="{{ url_for('static', filename='pictures/sister.jpg') }}" alt="Sister" style="width:250px;height:200px"; class="left">
+<p>I take sips of you in, dear sister.<br>
+    Plucked honeysuckles and marigold locks,<br>
+    Golden innocence, equipped with a morality compass,<br>
+    Guiding me due north, always in the right direction.<br><br>
+
+    Your enveloping soul balances mine.<br>
+    A respite and symphony of revival,<br>
+    A magnanimous wraith, glowing halo, with depth and purpose,<br>
+    Intertwined and parallel with my own spirit, touching,<br>
+    Like electric impulse and sparkling fate.
+    <br><br>
+
+    You are everything I am,<br>
+    And you are everything I am not.<br><br>
+</p>
+<hr>
+<h3 id="nostalgia">Nostalgia</h3>
+<p>
+    My mind unwound all over you, pouring out rage<br>
+    And selfish perspective, illuminated sentiment <br>
+    and fashioned nostalgia,<br>
+    Like a massive storm, unhinged and self-destructive,<br>
+    I roared, forcing my way through and out of your life.<br><br>
+</p>
+<hr>
+<h3 id="self-d">Self Destruction</h3>
+<img src="{{ url_for('static', filename='pictures/self-destruction.jpg') }}" alt="Self Destruction" style="width:200px;height:250px"; class="left">
+<p>
+    I am incessant insults,<br>
+    Years of insecurity & rusted self-esteem,<br>
+    Furrowed into a lump, hugging the back of my throat;<br>
+    Sitting quietly at my vanity,<br>
+    Covering up emotional bruises with expensive high-end make-up.<br><br>
+    I am chips of blissful self-destruction,<br>
+    chiseling out my body into a shell;<br>
+    Eating enough calories for an entire day,<br>
+    in a single sitting, drinking to black out,<br>
+    maxing out credit cards, all while a fogged dimness grabs on,<br>
+    digging hooks into my doughy sides.<br>
+    I am recklessly unbalanced & weighted;<br>
+    Sinking into the rising sea, <br>
+    inevitably lost.<br>
+</p>
+<br>
+<hr>
+    </div>
+
+<br>
+<!-- allows user to go back to top of page -->
+<a href="#top">TOP PAGE</a><br>
+<!-- returns to home.html -->
+<a href="{{ url_for('home') }}">HOME</a><br>
+<a href="{{ url_for('logout') }}">LOG OUT</a>
+</body>
+</html>

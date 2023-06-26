@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--title of the page-->
+    <title>Britt Wrote This</title>
+    <!--Links to main.css for a style sheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
+
+</head>
+<body class="home-color">
+<center><img src="{{ url_for('static', filename='pictures/brittwrotethis.jpeg') }}" alt="Home page picture"></center>
+<!--links to the other 2 pages-->
+<center><h4><a href="{{ url_for('about') }}" class="homepage">ABOUT</a></h4></center>
+<center><h4><a href="{{ url_for('poems') }}" class="homepage">POETRY</a></h4></center>
+<center><h4><a href="{{ url_for('update_password') }}" class="homepage">UPDATE PASSWORD</a></h4></center>
+<center><h4><a href="{{ url_for('logout') }}" class="homepage">LOG OUT</a></h4></center>
+
+</body>
+</html>

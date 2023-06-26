@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Links to main.css for a style sheet-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
+    <meta charset="UTF-8">
+    <title>Britt Wrote This</title>
+</head>
+<body class="pages-color">
+<a href="{{ url_for('home') }}" class="britt_link"><h1 id="top">britt wrote this</h1></a>
+<img src="{{ url_for('static', filename='pictures/britt.jpg') }}" alt="Brittani" style="width:200px;height:250px;"class="left">
+
+<h3 id="bio">Writer's Story:</h3>
+<p>You have reached the page of an aspiring writer, Brittani Watkins.<br> Ever since she was
+    a teenager, she has spent her free time with pen and paper,<br> writing poetry about love,
+    lost love, life experiences and life loses.</p>
+
+
+<h3 id="inspiration">Influential Writers:</h3>
+<!--Unordered list of 5 different influential writers and links to their wikipedia pages-->
+<ul>
+    <li><a href="https://en.wikipedia.org/wiki/Jane_Austen">Jane Austen</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Edgar_Allan_Poe"> Edgar Allan Poe</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Lauren_Willig"> Lauren Willig</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Sylvia_Plath"> Sylvia Plath</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Virginia_Woolf"> Virginia Wolff</a></li>
+</ul>
+<br><br>
+<!--Table-->
+<table border="1">
+ <caption><h3>Upcoming Events</h3></caption>
+ <tr>
+  <th>Event</th>
+  <th>Location</th>
+  <th>Date</th>
+  <th>Time</th>
+ </tr>
+ <tr>
+  <td>Public Reading</td>
+  <td>Hager Hall Conference Room</td>
+  <td>12/17/2021</td>
+  <td>6:00pm</td>
+ </tr>
+ <tr>
+  <td>Facebook Live</td>
+  <td>Britt Wrote This Facebook</td>
+  <td>12/20/2021</td>
+  <td>3:00pm</td>
+ </tr>
+ <tr>
+  <td>Public Reading</td>
+  <td>Bulls and Bears</td>
+  <td>12/21/2021</td>
+  <td>7:00pm</td>
+ </tr>
+ <tr>
+  <td>Poetry Sale</td>
+  <td>Williamsport Park Pavilion</td>
+  <td>12/29/2021</td>
+  <td>1:00pm</td>
+ </tr>
+</table>
+ <br>
+<!--link to instagram account-->
+<p>To connect with Brittani, you can follow her on
+    <a href="https://www.instagram.com/brittaniwrotethis/">instagram</a>.
+</p>
+<br>
+<!--link back to home.html-->
+<a href="{{ url_for('home') }}">HOME</a><br>
+<a href="{{ url_for('logout') }}">LOG OUT</a>
+</body>
+</html>

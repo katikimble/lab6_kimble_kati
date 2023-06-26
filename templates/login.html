@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Britt Wrote This</title>
+    <!--Links the stylesheet css to the page-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"/>
+</head>
+
+<body class="pages-color">
+<a href="{{ url_for('index') }}" class="britt_link"><h1 id="top">britt wrote this</h1></a>
+<br><br>
+<center>
+<h3>Login</h3>
+<form method="post">
+<table>
+<tr><td><label for="username">Username</label></td>
+<td><input name="username" id="username"></td>
+</tr>
+<tr>
+<td><label for="password">Password</label></td>
+<td> <input type="password" name="password" id="password"></td>
+</tr>
+<tr>
+<td colspan='1'><input type="submit" value="Login"></td>
+    <!--Link redirects to the registration page-->
+    <td><a style="font-size:14px" href="{{ url_for('register') }}">Not a user? Register here</a></td>
+
+</tr>
+</table>
+</form>
+    <!--For flashing errors-->
+    {% extends "app_flashes.html" %}
+{% block body %}
+    {% endblock %}
+</center>
+</body>
+</html>
